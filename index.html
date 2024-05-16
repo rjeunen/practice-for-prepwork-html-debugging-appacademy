@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Debugging HTML Practice
+    <!--BUG 1: Added a closing /title tag-->
+    <title>Debugging HTML Practice</title> 
   </head>
   <body>
-    <div class='profile'>
-        <h6>Profile Name</h6>
+    <!--BUG 6: <div class='profile'>--> <!--Commented out div class, does not have a closing tag-->
+        <h1>Profile Name</h1> <!--BUG 2: Changed h6 to h1-->
+
         <div class='address'>Address</div>
 
         <div class='contact'>
@@ -17,12 +19,13 @@
 
         <div class='categories'>
           <h2>Categories</h2>
-          <li>
-            <ul>Lorem ipsum</ul>
-            <ul>dolor sit</ul>
-            <ul>amet</ul>
-            <ul>dolor sit</ul>
-          </li>
+          <!--BUG3: swapped ul and li tags-->
+          <ul> 
+            <li>Lorem ipsum</li>
+            <li>dolor sit</li>
+            <li>amet</li>
+            <li>dolor sit</li>
+          </ul>
         </div>
 
       </div>
@@ -52,7 +55,7 @@
 
         <div class='footer-3-wide'>
           <ul>
-            <ol>
+            <li> <!--BUG4: chaged ol to li opening tag-->
               <a href='https://www.example.com/' target='_blank'>
                 Lorem ipsum dolor sit amet
               </a>
@@ -71,7 +74,7 @@
               <a href='https://www.example.com/' target='_blank'>
                 Lorem ipsum dolor sit amet
               </a>
-
+            </li> <!--BUG 5: Added closing tag for li-->
           </ul>
         </div>
 
